@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Lahman2009" Class="BaseballDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\DSHSQL08_1;Initial Catalog=Lahman2009;Persist Security Info=True;User ID=sa" SettingsObjectName="Repository.Properties.Settings" SettingsPropertyName="Lahman2009ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BatterDetail" Member="BatterDetails">
+    <Type Name="BatterDetail">
+      <Column Name="playerID" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="nameFirst" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="nameLast" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="yearID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="teamID" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="TeamName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="salary" Type="System.Double" DbType="Float" CanBeNull="false" />
+      <Column Name="G" Type="System.Int16" DbType="SmallInt" CanBeNull="false" />
+      <Column Name="AB" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="R" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="H" Type="System.Int16" DbType="SmallInt" CanBeNull="false" />
+      <Column Name="[2B]" Member="_2B" Type="System.Int16" DbType="SmallInt" CanBeNull="false" />
+      <Column Name="[3B]" Member="_3B" Type="System.Int16" DbType="SmallInt" CanBeNull="false" />
+      <Column Name="HR" Type="System.Int16" DbType="SmallInt" CanBeNull="false" />
+      <Column Name="RBI" Type="System.Int16" DbType="SmallInt" CanBeNull="false" />
+      <Column Name="SB" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BB" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
